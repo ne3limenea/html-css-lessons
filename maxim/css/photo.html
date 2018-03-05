@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    body{
+      background-color: #333;
+      margin-top: 80px;
+    }
+    img{
+      border: 5px solid white;
+      width: 250px;
+
+    }
+    p{
+      text-align: center;
+      height: 50px;
+      margin: 0;
+    }
+    #pic1{
+      transform: rotate(25deg) translateX(-100px);
+      box-shadow: 0 0 7px 2px green;
+    }
+    #pic2{
+      transform: rotate(-50deg);
+    }
+    #pic3{
+      transform: rotate(-25deg);
+      box-shadow: 0 0 7px 2px white;
+
+    }
+    #pic4{
+      transform: scale(0.4) rotate(-60deg) translateX(500px);
+    }
+    #pic5{
+      transform: rotate(20deg) skewX(20deg);
+    }
+    img:hover{
+      border-color: blue;
+      transform: scale(2) rotate(3600deg) !important;
+      transition: 0.5s;
+
+
+    }
+  </style>
+</head>
+<body>
+  <p>
+    <img id="pic1" src="../album/images/gate.jpg">
+    <img id="pic2" src="../album/images/car.png">
+  </p>
+  <p>
+    <img id="pic3" src="../album/images/sve4a.jpg">
+  </p>
+  <p>
+    <img id="pic4" src="../album/images/svet.png">
+    <img id="pic5" src="../album/images/universe.jpg">
+  </p>
+</body>
+</html>

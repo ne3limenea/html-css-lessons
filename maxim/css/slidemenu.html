@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    body{
+      background-color: #666;
+      margin: 0;
+    }
+    ul{
+      background-color: #555;
+      margin: 0;
+      list-style: none;
+      padding-left: 0;
+      width: 200px;
+      border-right: 50px solid #444;
+      transform: translateX(-200px);
+    }
+    a{
+      text-decoration: none;
+      color: #fff;
+    }
+    li{
+      padding: 20px;
+      border-bottom: 1px solid #444;
+      border-right: 1px solid #444;
+    }
+    li:hover{
+      background-color: black;
+    }
+    #g12{
+      border-bottom: none;
+    }
+    ul:hover{
+      transform: translateX(0);
+      transition: 0.5s;
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li><a href="">Главная</a></li>
+    <li><a href="">Форум</a></li>
+    <li><a href="">О нас</a></li>
+    <li><a href="">Контакты</a></li>
+    <li id="g12"><a href="">Выход</a></li>
+  </ul>
+</body>
+</html>
