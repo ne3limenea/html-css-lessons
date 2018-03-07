@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    body{
+      background-color: #222;
+    }
+    form{
+      background-color: #7c2100;
+      padding: 30px;
+    }
+    input{
+      border-radius: 100px 0 0 100px;
+      padding: 5px;
+      width: 150px;
+      transition: 1s;
+      outline: none;
+      border: 1px solid white;
+    }
+    button{
+      border-radius: 0 100px 100px 0;
+      padding: 5px;
+      padding-right: 10px;
+      background-color: #666;
+      border: 1px solid white;
+    }
+    button::before{
+      content: "[";
+      color: white;
+    }
+    button::after{
+      content: "]";
+      color: white;
+    }
+    input:focus{
+      width: 300px;
+    }
+    button:hover{
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <input type="text" class="input">
+    <button type="button" class="input">
+      Go
+    </button>
+  </form>
+</body>
+</html>
