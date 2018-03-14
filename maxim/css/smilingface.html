@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    body{
+      background-color: black;
+    }
+    #face{
+      background-color: yellow;
+      width: 100px;
+      height: 100px;
+      border-radius: 100px;
+    }
+    .eyes{
+      background-color: red;
+      width: 10px;
+      height: 10px;
+      border-radius: 100px;
+      /*float: left;
+      padding: 10px;
+      margin-left: 13px;
+      margin-top: 14px;*/
+      margin-top: 30px;
+    }
+    .mouth{
+      /*background-color: green;*/
+      width: 50px;
+      height: 30px;
+      float: left;
+      margin-left: 24px;
+      border-radius: 50%;
+      /*border: 2px dotted white;*/
+      border-bottom: 10px solid blue;
+      animation: smile 2s infinite;
+    }
+    .eyes:first-child{
+      float: left;
+      margin-left: 20px;
+      animation: wink 1s infinite;
+    }
+    .eyes:nth-child(2){
+      float: right;
+      margin-right: 20px;
+      animation: wink 1s infinite;
+    }
+    @keyframes wink{
+      from{ transform: scaleY(1.0)}
+        to{ transform: scaleY(0.1)}
+    }
+    @keyframes smile{
+      from{ transform: scaleY(1.0)}
+        to{ transform: scaleY(0.1)}
+    }
+  </style>
+</head>
+<body>
+  <div id="face">
+    <div class="eyes"></div>
+    <div class="eyes"></div>
+    <div class="mouth"></div>
+  </div>
+</body>
+</html>
