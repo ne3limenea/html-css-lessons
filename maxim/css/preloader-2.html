@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    body{
+      background-color: #444;
+    }
+    #preloader{
+      width: 100px;
+      height: 100px;
+    }
+    #preloader div{
+      width: 30px;
+      height: 30px;
+      background-color: #777;
+      float: left;
+      border: 1.5px solid #444;
+
+    }
+    @keyframes flash{
+      from{opacity: 1; transform: rotate(0)}
+        to{opacity: 0; transform: rotate(360deg)}
+    }
+    @keyframes rot{
+      from{transform: rotate(0)}
+      to{transform: rotate(-360deg)}
+    }
+    }
+    #preloader div:nth-child(4n+1){
+      animation: flash 1s infinite;
+    }
+    #preloader:hover div:not(:nth-child(4n+1)){
+      animation: flash 2s infinite;
+    }
+    #preloader:hover{
+      animation: rot 1s infinite;
+      transform:
+    }
+
+  </style>
+</head>
+<body>
+  <div id="preloader">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</body>
+</html>
