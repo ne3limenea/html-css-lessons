@@ -1,0 +1,28 @@
+body{
+  background-color: #242628;
+  margin: 0;
+}
+ul{
+  background-color: #3d444c;
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  width: 150px;
+  border-right: 50px solid grey;
+  transform: translateX(-150px);
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+li{
+  padding: 20px;
+  border-bottom: 1px solid white;
+  border-right: 1px solid white;
+}
+li:hover{
+  background-color: #242628;
+}
+ul:hover{
+  transform: translateX(0);
+}

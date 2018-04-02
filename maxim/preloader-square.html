@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    body{
+      background-color: grey;
+    }
+    .first{
+      background-color: #fff;
+      width: 15px;
+      height: 15px;
+      border-radius: 15px;
+      animation: flash 0s infinite;
+    }
+    .second{
+      background-color: #fff;
+      width: 15px;
+      height: 15px;
+      border-radius: 15px;
+      transform: translateX(25px);
+      animation: flash 2s infinite;
+    }
+    .third{
+      background-color: #fff;
+      width: 15px;
+      height: 15px;
+      border-radius: 15px;
+      transform: translateX(25px);
+      animation: flash 4s infinite;
+    }
+      @keyframes flash{
+      from{opacity: 1}
+        to{opacity: 0.3}
+</style>
+</head>
+<body>
+  <div class="first">
+    <div class="second">
+      <div class="third"></div>
+    </div>
+  </div>
+</body>
+</html>

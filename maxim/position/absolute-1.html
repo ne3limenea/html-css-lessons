@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Relative</title>
+  <style>
+  body{
+  
+  }
+  div{
+    width: 100px;
+    height: 100px;
+    color: #fff;
+  }
+  #a1{
+    background-color: #333;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    z-index: 2;
+  }
+  #a2{
+    background-color: #555;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    z-index: 1;
+  }
+  #a3{
+    background-color: #777;
+    position: absolute;
+    bottom: 100px;
+    right: 100px;
+  }
+  </style>
+</head>
+<body>
+<div id="a1">1</div>
+<div id="a2">2</div>
+<div id="a3">3</div>
+</body>
+</html>

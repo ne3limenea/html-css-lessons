@@ -1,0 +1,56 @@
+#paper .slice{
+  width: 200px;
+  height: 600px;
+  border: 1px solid black;
+  position: absolute;
+  background-image: url(images/1.jpg);
+  transition: 1s;
+
+}
+#paper{
+  perspective: 1000px;
+  position: absolute;
+}
+#paper .photo{
+  border: 3px solid red;
+  width: 800px;
+  height: 600px;
+  position: relative;
+}
+#paper .widgets{
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  z-index: -1;
+  height: 550px;
+}
+#paper .slice:nth-child(2){
+  left: 200px;
+  background-position: -200px;
+}
+#paper .slice:nth-child(3){
+  left: 400px;
+  background-position: -400px;
+}
+#paper .slice:nth-child(4){
+  left: 600px;
+  background-position: -600px;
+}
+#paper:hover .slice:nth-child(2){
+  transform: rotateY(45deg) scaleY(0.93);
+  left: 186px;
+}
+#paper:hover .slice:nth-child(3){
+  transform: rotateY(-45deg) scaleY(0.93);
+  left: 328px;
+}
+#paper:hover .slice:nth-child(4){
+  transform: rotateY(45deg) scaleY(0.93);
+  left: 471px;
+}
+#paper .widgets a:last-child{
+  position: absolute;
+  bottom: 50px;
+  right: 0px;
+
+}
