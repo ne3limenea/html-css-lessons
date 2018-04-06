@@ -13,13 +13,135 @@
       color: #999;
       position: absolute;
       padding: 30px;
-
+      width: 800px;
+      height: 70px;
+      border-radius: 45% 60px 60px 45%;
+      top: 50%;
+      left: 50%;
+      margin-top: -65px;
+      margin-left: -430px;
+    }
+    #fan .slice::before{
+      content: "\25EF";
+      position: absolute;
+      font-size: 10px;
+      left: 20px;
+      top: 57px;
+      color: #ddd;
+      background-color: #222;
+      border-radius: 100px;
+      box-shadow: 0 0 5px 2px #222;
     }
     #fan h2,
     #fan p{
       margin: 0;
     }
-
+    #fan p{
+      text-align: right;
+      text-decoration: underline;
+      font-style: italic;
+      font-size: 14px;
+      color: #000;
+      padding-top: 25px;
+    }
+    #fan h2{
+      font-size: 22px;
+      color: #fff;
+      padding-left: 17px;
+      padding-top: 1px;
+      text-align: right;
+    }
+    #fan h2::before{
+      content: "\275D";
+      font-size: 25px;
+      padding-right: 5px;
+      color: #999;
+    }
+    #fan h2::after{
+      content: "\275E";
+      font-size: 25px;
+      padding-left: 5px;
+      color: #999;
+    }
+    /*ниже эффекты*/
+    #fan .slice:nth-child(1){
+      background-color: #303030;
+    }
+    #fan .slice:nth-child(2){
+      background-color: #353535;
+    }
+    #fan .slice:nth-child(3){
+      background-color: #404040;
+    }
+    #fan .slice:nth-child(4){
+      background-color: #454545;
+    }
+    #fan .slice:nth-child(5){
+      background-color: #505050;
+    }
+    #fan .slice:nth-child(6){
+      background-color: #555555;
+    }
+    #fan .slice:nth-child(7){
+      background-color: #606060;
+    }
+    #fan .slice:nth-child(8){
+      background-color: #656565;
+    }
+    #fan .slice:nth-child(9){
+      background-color: #707070;
+    }
+    #fan .slice:nth-child(10){
+      background-color: #757575;
+    }
+    #fan .slice:nth-child(11){
+      background-color: #808080;
+    }
+    #fan .slice:nth-child(12){
+      background-color: #858585;
+    }
+    #fan .slice{
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      transform-origin: 50px 65px;
+      transform: rotate(0);
+      transition: 1s;
+    }
+    #fan:hover .slice:nth-child(1){
+      transform: rotate(-60deg);
+    }
+    #fan:hover .slice:nth-child(2){
+      transform: rotate(-50deg);
+    }
+    #fan:hover .slice:nth-child(3){
+      transform: rotate(-40deg);
+    }
+    #fan:hover .slice:nth-child(4){
+      transform: rotate(-30deg);
+    }
+    #fan:hover .slice:nth-child(5){
+      transform: rotate(-20deg);
+    }
+    #fan:hover .slice:nth-child(6){
+      transform: rotate(-10deg);
+    }
+    #fan:hover .slice:nth-child(7){
+      transform: rotate(0deg);
+    }
+    #fan:hover .slice:nth-child(8){
+      transform: rotate(10deg);
+    }
+    #fan:hover .slice:nth-child(9){
+      transform: rotate(20deg);
+    }
+    #fan:hover .slice:nth-child(10){
+      transform: rotate(30deg);
+    }
+    #fan:hover .slice:nth-child(11){
+      transform: rotate(40deg);
+    }
+    #fan:hover .slice:nth-child(12){
+      transform: rotate(50deg);
+    }
   </style>
 </head>
 <body>
