@@ -5,6 +5,7 @@
   position: absolute;
   background-image: url(images/1.jpg);
   transition: 1s;
+
 }
 #paper{
   perspective: 1000px;
