@@ -5,20 +5,30 @@ a{
   color: white;
   transform: skewX(-45deg);
 }
+nav ul{
+  background-color: yellow;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  position: absolute;
+  border-radius: 100%;
+}
 nav li{
   width: 300px;
   height: 300px;
   background-color: #666;
   position: absolute;
   transform-origin: 0 0;
-  border: 1px solid green;
+
   overflow: hidden;
+  top: 150px;
+  left: 150px;
 }
 nav li a{
   width: 300px;
   height: 300px;
   border-radius: 100%;
-  background-color: #333;
+  background-image: radial-gradient(black,white 10%,black);
   display: block;
   position: absolute;
   top: -150px;
@@ -54,5 +64,56 @@ nav li:nth-child(8){
   transform: rotate(315deg) skewX(45deg);
 }
 nav li a:hover{
-  background-color: #999;
+  background-image: radial-gradient(black,gray,#333 25%);
+
+}
+nav i{
+  position: absolute;
+  top: 190px;
+  left: 260px;
+}
+nav li:nth-child(1) i{
+  transform: rotate(0);
+}
+nav li:nth-child(2) i{
+  transform: rotate(-45deg);
+}
+nav li:nth-child(3) i{
+  transform: rotate(-90deg);
+}
+nav li:nth-child(4) i{
+  transform: rotate(-135deg);
+}
+nav li:nth-child(5) i{
+  transform: rotate(-180deg);
+}
+nav li:nth-child(6) i{
+  transform: rotate(-225deg);
+}
+nav li:nth-child(7) i{
+  transform: rotate(-270deg);
+}
+nav li:nth-child(8) i{
+  transform: rotate(-315deg);
+}
+nav ul::after{
+  font-family: "fontawesome";
+  content: "\f2cd";
+  position: absolute;
+  top: 60px;
+  left: 60px;
+  width: 180px;
+  height: 180px;
+  border-radius: 100%;
+  background-color: #ccc;
+  display: block;
+  text-align: center;
+  line-height: 180px;
+  font-size: 50px;
+  color: #444;
+  box-shadow: 0 0 5px 5px #444;
+  text-shadow: 3px 3px 5px #444;
+}
+nav ul:target::after{
+  content: "\f294";
 }
