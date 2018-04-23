@@ -1,0 +1,43 @@
+/*Global styles - независившие от устройства*/
+body{
+  background-color: #333;
+}
+#profile{
+  border: 1px solid white;
+  width: 90%;
+  margin: 5%;
+}
+/*PC styles*/
+#profile figure, #profile footer{
+  display: inline-block;
+  vertical-align: middle;
+}
+#profile figure{
+  width: 40%;
+  margin: 0;
+  background-color: #666;
+}
+#profile footer{
+  width: 60%;
+  background-color: #888;
+}
+#profile figure img{
+  width: 100%;
+}
+/*Mobile styles*/
+@media screen and (max-width:600px){
+  #profile figure, #profile footer{
+    display: block;
+    vertical-align: middle;
+    width: 100%;
+  }
+  #profile footer h3{
+    margin: 0;
+  }
+  #profile footer ul{
+    margin-bottom: 0;
+  }
+  #profile figure h2{
+    margin-bottom: 0;
+  }
+}
