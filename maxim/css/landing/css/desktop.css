@@ -1,0 +1,31 @@
+nav{
+  padding-top: 1%;
+  padding-bottom: 2%;
+}
+nav div{
+  display: inline-block;
+  vertical-align: middle;
+}
+nav div:first-child{
+  width: 30%;
+  font-size: 35px;
+  font-weight: bold;
+}
+nav div:last-child{
+  width: 70%;
+  text-align: right;
+}
+nav div:last-child a{
+  margin-left: 2.5%;
+  font-size: 20px;
+}
+nav div:last-child a:hover{
+  color: yellow;
+}
+nav div:last-child a:first-child{
+  display: none;
+}
+.container{
+  margin-left: 8%;
+  margin-right: 8%;
+}
