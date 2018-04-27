@@ -1,13 +1,24 @@
 body{
 }
+nav{
+  padding: 10px 3%;
+}
 nav div{
   display: inline-block;
   vertical-align: middle;
+  width: 50%;
 }
 nav div:last-child a{
   display: none;
 }
 nav div:last-child a:first-child{
   display: inline;
-  position: ;
+  border: 1px solid white;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-bottom: 2px;
+  border-radius: 5px;
+}
+nav div:last-child{
+  text-align: right;
 }
