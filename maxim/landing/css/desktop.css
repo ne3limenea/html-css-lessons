@@ -1,0 +1,145 @@
+nav{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+nav div{
+  display: inline-block;
+  vertical-align: middle;
+}
+nav div:first-child{
+  width: 30%;
+}
+nav div:last-child{
+  width: 70%;
+  text-align: right;
+  font-size: 22px;
+}
+nav div:last-child a{
+  margin-left: 2.5%;
+  font-size: 12px;
+  font-weight: bold;
+}
+.container{
+  margin-left: 8%;
+  margin-right: 8%;
+}
+nav div:last-child a:first-child{
+display: none;
+}
+nav div:last-child a:hover{
+  color: #ffb300;
+}
+header img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+header::after{
+  content: "";
+  color: white;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background-image: url(../image/grid.png);
+  z-index: -1;
+}
+article div{
+    color: #fff;
+    width: 45%;
+}
+article div h1{
+    margin-left: 17%;
+    margin-top: 10%;
+    margin-bottom: 0px;
+    font-size: 60px;
+    padding: 0;
+    line-height: 70px;
+}
+article div h2{
+    margin-top: 0;
+    margin-left: 17%;
+    font-size: 30px;
+}
+article div p{
+    margin-left: 17%;
+    font-size: 18px;
+}
+article div button{
+    width: 175px;
+    height: 40px;
+    background-color: #f4bf42;
+    border-radius: 5px 5px 5px 5px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    border-style: none;
+    outline: none;
+}
+article div .discover{
+    margin-left: 17%;
+}
+article div .purchase{
+    margin-left: 3%
+}
+article form{
+    position: absolute;
+    top: 17px;
+    left: 60%;
+    width: 25%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.55);
+    color: #fff;
+    border-radius: 10px;
+    text-align: center;
+ }
+article{
+    position: relative;
+}
+article form p{
+    font-size: 22px;
+}
+article form input{
+    width: 85%;
+    height: 10%;
+    margin: 5px;
+    outline: none;
+    border-radius: 5px;
+    border-style: none;
+}
+article form input:focus{
+    border: 3px #f4bf42 solid;
+    border-radius: 3px;
+    outline: none;
+}
+input::placeholder{
+    padding: 5px;
+    font-family: 'arial';
+    font-size: 18px;
+}
+article form button{
+    width: 175px;
+    height: 40px;
+    background-color: #f4bf42;
+    border-radius: 5px 5px 5px 5px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    border-style: none;
+    outline: none;
+}
+article form h6{
+    font-size: 18px;
+    margin-top: 10px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: normal;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 25px;
+}
+article button:hover{
+    background-color: #b58e32;
+    color: white;
+}
